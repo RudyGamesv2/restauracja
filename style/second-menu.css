@@ -1,0 +1,158 @@
+.second-menu{
+    background-color: var(--blue-charcoal);
+}
+
+.mini-nav{
+    padding: 50px 0 1px 0;
+    font-family: 'Bellota';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+
+    color: var(--teak);
+}
+
+.mini-nav a{
+    color: rgba(255, 255, 255, .9);
+    transition: .7s all;
+}
+
+.mini-nav a:hover{
+    border-bottom: 1px solid var(--teak);
+}
+
+
+.second-menu .container{
+    height: 100%;
+}
+
+.heading--secondmenu{
+    display: inline-block;
+    font-family: 'Bellota', cursive;
+    border-bottom: 2px solid;
+    color: var(--teak);
+    padding: 50px 0 1px 0;
+}
+
+.list{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column; 
+    
+    width: 100%;
+    height: 50px;
+    margin-bottom: 100px;
+    transition: 1s transform;
+    cursor: default;
+}
+
+.price{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price .hide-image{
+    position: absolute;
+    visibility: hidden;
+    width: 250px;
+    height: 200px;
+    object-fit: cover;
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: 1s all;
+}
+
+.price:hover .hide-image {
+    visibility: visible;
+    display: block;
+    opacity: 1;
+}
+
+.price h2 span{
+    text-decoration: line-through;
+    color: #fff;
+}
+
+
+.price h3{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: var(--teak);
+}
+
+.box h2{
+    font-family: 'Bellota';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    transition: .7s color;
+    text-transform: uppercase;
+}
+
+.box h2:hover{
+   color: var(--teak); 
+}
+
+.box h4{
+    font-family: 'Bellota';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 27px;
+    color: rgba(255, 255, 255, 0.7);
+    transition: .7s all;
+}
+
+.box h4:hover{
+    color: rgba(255, 255, 255, 0.9);
+}
+
+
+.box img{
+    pad: 10px;
+    margin: 10px 0;
+}
+
+@media screen and (max-width: 540px) {
+    .box{
+        margin-bottom: 50%;
+    }
+
+}
+
+@media screen and (max-width: 321px){
+    .heading--secondmenu{
+        margin-bottom: 20px;
+    }
+    .box{
+        margin-bottom: 200px;
+    }
+
+    .price{
+        flex-direction: column;
+    }
+    .price h3{
+        margin-top: 10px;
+    }
+    .list{
+        text-align: center;
+    }
+
+    .price:hover .hide-image {
+        visibility: hidden;
+        display: none;
+        opacity: 0;
+    }
+}

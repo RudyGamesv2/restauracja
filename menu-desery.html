@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Restauracja</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/second-menu.css">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    </head>
+    <body>
+
+        <header>
+            <div class="inner-width">
+                <a href="index.html" class="nav-company">Nazwa Restauracji</a>
+    
+                <div class="hamburger">
+                    <div class="bar"></div>
+                </div>
+                
+                  
+                <nav class="navigation-menu">
+                    <a class="navigation-item" href="index.html"><i class="fa-solid fa-house home-nav"></i> Start</a>
+                    <a class="navigation-item" href="index.html#about"><i class="fa-solid fa-people-group team-nav"></i> O nas</a>
+                    <a class="navigation-item" href="index.html#menu"><i class="fa-solid fa-utensils menu-nav"></i> Menu</a>
+                    <a class="navigation-item" href="index.html#reservation"><i class="fa-solid fa-calendar-days reservation-nav"></i> Rezerwacja</a>
+                    <a class="navigation-item" href="index.html#contact"><i class="fas fa-headset contact-nav"></i> Kontakt</a>
+                </nav>
+            </div>
+        </header>
+
+        <section class="home" id="home">
+            <div class="full-screen">
+
+                <video class="home__video" src="video/grill.mp4" autoplay muted loop></video>
+                <video class="home__video" src="video/lemoniade.mp4" autoplay muted loop></video>
+                <video class="home__video" src="video/pizza.mp4" autoplay muted loop></video>
+                <video class="home__video" src="video/restaurant.mp4" autoplay muted loop></video>
+
+                <div class="shadow">
+                    <div class="container">
+                        <div class="home-text">
+                            <div class="hero-text">
+                                <h1>Świeże <span></span></h1>
+                                <h1>Smaczne<span></span></h1>
+                                <h1>Jedzenie <span></span></h1>
+                                <h1>Nazwa Restauracji<span></span></h1>
+                            </div>
+                            <a href="#menu" type="button" class="cta">Zobacz MeNU</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        
+
+        <section id="menu" class="second-menu">
+            <div class="container">
+
+                <div class="mini-nav">
+                    <a href="index.html">Start </a> &#8811 <a href="index.html#menu">Menu</a> &#8811 <a href="#"><span>Dania</span></a>
+                </div>
+
+                <h1 class="heading--secondmenu">Dania</h1>
+                
+                <div class="list">
+                    <div class="box">
+                        <div class="price">
+                            <img class="hide-image" src="img/tiramisu.jpg" alt="Tiramisu">
+                            <h2>Tiramisu</h2>
+                            <h3>12zł</h3>
+                        </div>
+                        
+                        <img src="Line.svg" alt="linia oddzielająca nazwe od opisu jedzenia">
+                        <h4>z adwokatem</h4>
+                    </div>
+                        
+                    <div class="box">
+                        <div class="price">
+                            <img class="hide-image" src="img/szarlotka.jpg" alt="Szarlotka">
+                            <h2>Szarlotka z lodami</h2>
+                            <h3>z ciepłym sosem waniliowym</h3>
+                        </div>
+                        <img src="Line.svg" alt="linia oddzielająca nazwe od opisu jedzenia">
+                        <h4>Okraszone cebulką</h4>
+                    </div>  
+
+                    <div class="box">
+                        <div class="price">
+                            <img class="hide-image" src="" alt="miejsce na zdjecie">
+                            <h2>Nazwa Dania</h2>
+                            <h3>Cena</h3>
+                        </div>
+                        <img src="Line.svg" alt="linia oddzielająca nazwe od opisu jedzenia">
+                        <h4>Opis dania</h4>
+                    </div>
+
+                    <div class="box">
+                        <div class="price">
+                            <img class="hide-image" src="" alt="miejsce na zdjecie">
+                            <h2>Nazwa Dania</h2>
+                            <h3>Cena</h3>
+                        </div>
+                        <img src="Line.svg" alt="linia oddzielająca nazwe od opisu jedzenia">
+                        <h4>Opis dania</h4>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <div class="container">
+                <div class="footer-info">
+                    <a class="nav-company" href="#">Nazwa restauracji</a>
+                    <p>Wszelkie Prawa Zastrzeżone 2022</p>
+                </div>
+                <div class="footer-contact">
+                    <a class="contact-mail" href="mailto:twojmail@gmail.com">twojmail@gmail.com</a>
+                    <a onclick="alertSoon()">Stronę wykonał Rudygamesv2</a>
+                </div>
+                <div class="media-icon">
+                    <a onclick="alertYourLink()" target="_blank" href="#">
+                        <i class="fa-brands fa-google fa-xl"></i></a>
+                    <a onclick="alertYourLink()" target="_blank" href="#">
+                        <i class="fa-brands fa-facebook fa-xl"></i></a>
+                    <a onclick="alertYourLink()" target="_blank" href="#">
+                        <i class="fa-solid fa-user fa-xl"></i></a>
+                </div>
+            </div>
+        </footer>
+
+
+        <script src="script/script.js"></script>
+        <script src="https://kit.fontawesome.com/58309639ce.js" crossorigin="anonymous"></script>
+    </body>
+</html>
